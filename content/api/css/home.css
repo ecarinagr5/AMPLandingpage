@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'PeugeotFont';
+    src: url('../fonts/Peugeot_Normal_v2.otf');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PeugeotFontLight';
+    src: url('../fonts/Peugeot_Light_v2.otf');
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+    margin:0 auto;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+}
+html {
+    font-family: 'PeugeotFontLight','Montserrat', sans-serif;
+    height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background:url(../img/bg-2.jpg);
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header {
+    position: fixed;
+    z-index: 3;
+}
+.header img {
+ width: 50%;
+ margin: 20px;
+}
+
+/*HOME*/
+#body-content-index {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+/* HEADER */
+#header-container {
+    height: 100px;
+    width: 200px;
+    border-radius: 50% / 100% 100% 0 0;
+    background: white;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);  
+    -o-transform: rotate(180deg);
+    position: fixed;
+    left: 42.8%;
+    top: 0px;
+    z-index: 12;
+    -webkit-box-shadow: 0px 2px 14px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 2px 14px 0px rgba(0,0,0,1);
+    box-shadow: 0px 2px 14px 0px rgba(0,0,0,1);
+  }
+  
+  #header-container img {
+    margin: 15% 28%;
+    width: 40%;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);  
+    -o-transform: rotate(180deg);
+  }
+
+
+#body-content {
+    background:url(../img/bgchico-208.jpg);
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow:auto;
+}
+#body-content301 {
+    overflow:auto;
+}

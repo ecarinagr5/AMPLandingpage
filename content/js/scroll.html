@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<style>
+.box {
+    position:absolute;
+    height:300px;
+    width:100%;
+}
+#fake-window-with-scrollbar {
+    overflow-y:scroll;
+    width:217px;
+    /* leave room for scroll bar */
+}
+#placeholder-for-scrollbar {
+    position:absolute;
+    top:900px;
+    /* height for 3 sections @ 200 px each */
+    height:1px;
+    width:100%;
+    opacity:0;
+}
+#window-that-crops-stuff {
+    overflow-y:auto;
+    width: 100%;
+    /* after JS:
+    overflow-y: hidden;
+    width:200px;
+    */
+}
+#section-1 {
+    background-color:green;
+    top:0px;
+}
+#section-2 {
+    background-color:purple;
+    top:300px;
+}
+#section-3 {
+    background-color:blue;
+    top:600px;
+}
+</style>
+<body>
+    <div id="window-that-crops-stuff" class="box">
+        <div id="section-1" class="box section">
+             <h1>Section 1</h1>
+    
+        </div>
+        <div id="section-2" class="box section">
+             <h1>Section 2</h1>
+    
+        </div>
+        <div id="section-3" class="box section">
+             <h1>Section 3</h1>
+    
+        </div>
+    </div>
+    
+
+</body>
+<script>
+    // if the user has javascript, make the page pretty
+document.getElementsByTagName("body")[0].innerHTML += "<div id=\"fake-window-with-scrollbar\" class=\"box\"><div id=\"placeholder-for-scrollbar\"></div></div>";
+document.getElementById("window-that-crops-stuff").style.overflowY = "hidden";
+document.getElementById("window-that-crops-stuff").style.width = "1200";
+document.getElementById("fake-window-with-scrollbar").addEventListener("scroll", function (e) {
+    var scrollPos = e.target.scrollTop;
+    var sections = document.getElementsByClassName("section");
+    for (var k = 0; k < sections.length; k++) {
+        sections[k].style.top = Math.max(300 * k - scrollPos, 0) + "px";
+    }
+});
+</script>
+</html>

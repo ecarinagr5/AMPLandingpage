@@ -1,0 +1,3057 @@
+@font-face {
+    font-family: 'PeugeotFont';
+    src: url('../fonts/Peugeot_Normal_v2.otf');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PeugeotFontLight';
+    src: url('../fonts/Peugeot_Light_v2.otf');
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+    margin:0 auto;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+}
+html {
+    font-family: 'PeugeotFontLight','Montserrat', sans-serif;
+    height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+.header {
+    position: fixed;
+    z-index: 3;
+}
+.header img {
+ width: 50%;
+ margin: 20px;
+}
+#body-content301 {
+    overflow:auto;
+}
+.bodybackground {
+    background:url(../img/bg-2.jpg);
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  /*menu 301*/
+
+  #menu301 {
+    font-family: 'PeugeotFontLight', 'Montserrat', sans-serif;
+  }
+  #menu301 ul {
+    list-style-type: none;
+    overflow: hidden;
+  }
+  #menu301 ul li {
+    padding: 10px 0px;
+    text-align: left;
+  }
+  #menu301 ul li p {
+    border: .5px solid white;
+    width: 60px;
+    text-align: left;
+    margin: 0 20% 0 -25%;
+  }
+  #menu301 ul li a {
+    font-size: 12px;
+    color:white;
+    text-decoration: none;
+    text-align: left;
+  }
+  #menu301 ul li a.active {
+    padding-left: 0px;
+    font-size: 13px;
+    text-align: right;
+  }
+  #menu301 ul li a:hover {
+   padding-left: 40px;
+  }
+.container-menu301 {
+    display: block;
+    width: 180px;
+    height: auto;
+    position: fixed;
+    z-index: 9;
+    top:35%;
+    left:0%;
+  }
+
+
+/*Seccion Uno 301*/
+#seccion-uno301.main-content {
+    background:url(../img/208-bg-1.jpg);
+    height: 960px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color: #ffffff;
+    font-size: 5vw;
+    text-align: center;
+    align-content: center;
+    overflow:auto;
+    position: relative;
+}
+
+#seccion-uno301.main-content .title-initial {
+    width: 45%;
+    position: fixed;
+    left:26%;
+    margin: 5% 0 0 0;
+    z-index: 0;
+    display: none;
+}
+#seccion-uno301.main-content .title-mini {
+    position: fixed;
+    left:34%;
+    margin: 11% 0 0 0;
+    z-index: 0;
+    display: none;
+}
+#seccion-uno301.main-content .car-home {
+    width: 50%;
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    z-index: 0;
+    display: none;
+}
+    
+/*BOTON 208*/
+#btnCar.button-containerb {
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    z-index: 9;
+    top:50%;
+    right: 0;
+    text-align: left;
+    font-family: 'PeugeotFontLight','Montserrat', sans-serif;
+  }
+  .button-container p:nth-child(2) {
+    width: 90px;
+    height: 20px;
+    padding: 5px 0px;
+    margin: 0 0 0 0;
+    font-style: italic;
+   background:url(../img/flecha301.png) repeat center;
+}
+  .button-containerb p {
+    font-family: 'PeugeotFontLight','Montserrat', sans-serif;
+    font-size: 12px;
+    color: white;
+    font-style: italic;
+    padding: 0px 15px 3px 5px;
+  }
+  .button-containerb .menu-parrafo {
+    border-bottom: 1px solid white;
+    width: 100px;
+    text-align: right;
+    margin-left:40%;
+  }
+  .button-containerb .shadow-button {
+    background: white;
+    position: fixed;
+    top:45%;
+    left:94%;
+    z-index: 8;
+    opacity: .3;
+    width: 85px; 
+    height: 160px; 
+    -moz-border-radius: 0 100px 100px 0;
+    -webkit-border-radius: 0 100px 100px 0;
+    border-radius: 0 100px 100px 0;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);  
+    -o-transform: rotate(180deg);
+  }
+  
+  .button-containerb .shadow-button:hover {
+    left: 93%; 
+    width: 99px; 
+  }
+  .button-containerb .parrafo-button {
+    font-weight: 900;
+    font-size: 11px;
+    padding: 10px 5px 0px 0px;
+    font-weight: 900;
+  }
+    .button-container p:hover {
+        padding-left: 30%;
+    }
+  .dieselImg {
+      position: absolute;
+      top: 45%;
+      left: 75%;
+  }
+#seccion-cuatro301.main-content {
+    text-align: center;
+    height: 700px;
+    position: relative;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+/*BOTONES ICONOS*/
+div#optionsIcons.container-buttons-options {
+    position: absolute;
+    z-index: 7;
+    height: auto;
+    bottom:42%;
+    left: 1.0%;
+    width: 200px;
+  }
+  .container-buttons-options .ico {
+    float: left;
+    padding: 5px;
+  }
+  .container-buttons-options .ico img {
+    width: 40px;
+    cursor: pointer;
+  }
+  .container-buttons-options .ico img:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);  
+  }
+  #optionsInfo {
+    position: relative;
+    float: left;
+  }
+  div.leyenda {
+    position: absolute;
+    font-size: 1.2vh;
+    text-align: justify;
+    width: 15%;
+    bottom:37.5%;
+    left: 1.5%;
+  }
+  .no-lopagas {
+    text-align: right;
+    position: absolute;
+    z-index: 1;
+    right: 34px;
+    bottom: 33%;
+  }
+
+/*carrusel*/
+#wrapper {
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+}
+#carousel {
+	width: 100%;
+	height: auto;
+}
+#carousel div {
+	width: 100%;
+	height: 600px;
+    position: relative;
+
+}
+#carousel img {
+	border: none;
+	display: block;
+	position: absolute;
+	top: 1%;
+    left: 0%;
+    width: 100%;
+    height: auto;
+    z-index: 12;
+}
+ 
+#wrapper a {
+    background: url(../img/hotspot.png);
+    background-size: 100%;
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 30px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 0 2px rgba( 0, 0, 0, 0.4 );
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 40px;
+	left: 48%;
+}
+#wrapper a.close {
+	border: 1px solid #fff;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 30px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 0 2px rgba( 0, 0, 0, 0.4 );
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 20%;
+    left: 92%;
+    z-index: 12;
+}
+#wrapper a#link-1 {
+	width: 80px;
+	height: 80px;
+	left: 55%;
+    top: 15%;
+    border: 0;
+}
+#wrapper a#link-2 {
+	width: 80px;
+	height: 80px;
+	left: 25%;
+    top: 28%;
+    border: 0;
+}
+#wrapper a#link-3 {
+	width: 80px;
+	height: 80px;
+	left: 80%;
+    top: 18%;
+    border: 0;
+}
+#wrapper a#link-4 {
+	width: 80px;
+	height: 80px;
+	left: 20%;
+    top: 78%;
+    border: 0;
+}
+#wrapper a#link-5 {
+	width: 80px;
+	height: 80px;
+	left: 45%;
+    top: 10%;
+    border: 0;
+}
+
+#wrapper a#link-1:hover,
+#wrapper a#link-2:hover,
+#wrapper a#link-3:hover,
+#wrapper a#link-4:hover,
+#wrapper a#link-5:hover {
+    transform: scale(1.1);
+}
+/*Diseno exterior*/
+#wrapper-exterior {
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+}
+#carousel-exterior {
+	width: 100%;
+	height: auto;
+}
+#carousel-exterior div {
+	width: 100%;
+	height: 600px;
+    position: relative;
+
+}
+#carousel-exterior img {
+	border: none;
+	display: block;
+    position: absolute;
+    z-index: 9;
+	top: 18%;
+    left: 0%;
+    width: 100%;
+    height: auto;
+    z-index: 12;
+    background: #000;
+}
+.content-modal {
+    position: absolute;
+    z-index: 12; 
+}
+.content-modal h2 {
+    color:black;
+    position: absolute;
+    top:50%;
+    left: 53%;
+    z-index: 12;
+}
+.content-modal p {
+    color:black;
+    position: absolute;
+    top:55%;
+    left: 53%;
+    z-index: 12;
+    text-align: left;
+    padding: 0 3% 0 0;
+}
+.content-modali {
+    position: absolute;
+    z-index: 12; 
+    background: #000;
+}
+.content-modali h2 {
+    color:black;
+    position: absolute;
+    top:35%;
+    left: 55%;
+    z-index: 22;
+}
+.content-modali p {
+    color:black;
+    position: absolute;
+    top:40%;
+    left: 55%;
+    z-index: 12;
+    right: 6%;
+    text-align: left;
+}
+#wrapper-exterior a {
+    background: url(../img/hotspot.png);
+    background-size: 100%;
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 30px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 0 2px rgba( 0, 0, 0, 0.4 );
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#wrapper-exterior a.close {
+	border: 1px solid #fff;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 30px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 0 2px rgba( 0, 0, 0, 0.4 );
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+    top: 35%;
+    z-index: 12;
+	left: 94%;
+}
+
+#wrapper-exterior a#tool-1{
+	width: 70px;
+	height: 70px;
+	left: 26%;
+    top: 55%;
+    border: 0;
+}
+#wrapper-exterior a#tool-2 {
+	width: 70px;
+	height: 70px;
+	left: 46%;
+    top: 58%;
+    border: 0;
+}
+#wrapper-exterior a#tool-3 {
+	width: 70px;
+	height: 70px;
+	left: 70%;
+    top:52%;
+    border: 0;
+}
+#wrapper-exterior a#tool-4 {
+	width: 70px;
+	height: 70px;
+	left: 33%;
+    top:54%;
+    border: 0;
+}
+#wrapper-exterior a#tool-6 {
+	width: 70px;
+	height: 70px;
+	left: 58%;
+    top:30%;
+    border: 0;
+}
+#wrapper-exterior a#tool-1:hover,
+#wrapper-exterior a#tool-3:hover,
+#wrapper-exterior a#tool-4:hover,
+#wrapper-exterior a#tool-5:hover,
+#wrapper-exterior a#tool-2:hover
+#wrapper-exterior a#tool-6:hover
+ {
+    transform: scale(1.1);
+}
+/*Formulario*/
+div.content-form {
+    backface-visibility: blue;
+    padding: 50px 10px;
+    text-align: left;
+    height: 400px;
+  }
+  div.content-form.sideleft {
+    padding-left: 12%;
+    height: auto;
+  }
+  div.content-form.sideright {
+    padding-right: 12%;
+    height: auto;
+  }
+  div.content-form p {
+    color:rgb(140, 140, 140);
+    font-size: 13px;
+    padding: 0px 5px 0 0;
+  }
+  #btn-form {
+   text-align:center;
+   margin: -4% 0;
+  }
+  .btn-pruebamanejo {
+     text-align: center;
+    cursor: pointer;
+    opacity: 1;
+    border-width: 0px;
+    border-radius: 2px;
+    border-color: rgb(53, 126, 189);
+    border-style: solid;
+    background-color: rgb(0, 98, 196);
+    color:white;
+    padding: 15px 80px;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  
+  span.btn-pruebamanejo:hover {
+    -webkit-box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.75);
+  }
+  
+  #btn-link {
+    text-align: center;
+    margin: 1% 0;
+  }
+  input[name=enviar] {
+    width: 40%;
+    text-align: center;
+    cursor: pointer;
+    opacity: 1;
+    border-width: 0px;
+    border-radius: 5px;
+    border-color: rgb(53, 126, 189);
+    border-style: solid;
+    background-color: rgb(0, 98, 196);
+    color:white;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+  }
+  .btn-cotiza {
+    font-size: 13px;
+    color: rgb(0, 98, 196);
+    text-decoration: underline;
+  }
+  .btn-cotiza:hover {
+    text-decoration: none;
+  }
+  .campoladob {
+    padding: 20px 0;
+  }
+  .campoladoc {
+    margin: 20px 0;
+  }
+  .campolado {
+    float:left;
+    padding: 20px 0;
+  }
+  .campolado label, .campo label {
+    color:rgb(140, 140, 140);
+    font-size: 13px;
+    padding: 20px 0;
+  }
+  .campo {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  input {
+    border: 1px solid rgb(140, 140, 140);
+    margin-top:5px;
+  }
+  
+  select {
+    width: 100%;
+    height: 35px;
+    color:  rgb(140, 140, 140);
+    font-size: 15px;
+    padding-left:10px;
+    margin-top:5px;
+    border: 1px solid rgb(140, 140, 140);
+    background: white;
+    font-weight: 900;
+  }
+  
+  input[name=name] {
+    height: 35px;
+  
+  }
+  input[type=radio], input[type=checkbox] {
+    width: 20px;
+    float:left;
+  }
+  input, input[name=fapellido] {
+    width: 100%;
+    height: 35px;
+    color:  rgb(0, 95, 198);
+    font-size: 15px;
+    padding-left:10px;
+  }
+  input:focus {
+    border: 1px solid rgb(0, 95, 198);
+    color:  rgb(0, 95, 198);
+    padding: 0 0 5px 5px;
+  }
+  .radioBtn {
+    float: left;
+    width: 50%;
+  }
+  .radioBtn label {
+    float:left;
+    padding:17px 0 0 5px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+    
+  /* FOOTER */
+  
+  #logo-footer {
+    height: 80px;
+    width: 150px;
+    border-radius: 50% / 100% 100% 0 0;
+    background: white;
+    position: fixed;
+        left: 45%;
+        bottom:0; 
+        z-index: 12;
+    text-align: center;
+    padding: 20px 25px;
+    cursor: pointer;
+    border: 0px;
+    -webkit-box-shadow: 0px 2px 14px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 2px 14px 0px rgba(0,0,0,1);
+    box-shadow: 0px 2px 14px 0px rgba(0,0,0,1);
+    font-weight: 900;
+    font-style:italic;
+  }
+  #logo-footer span {
+    color:#0a0a9a;
+    font-size: 13px;
+  }
+  #footer-container {   
+    position: fixed;
+    background: white;
+    height: 400px;
+    bottom: 0%;
+    width: 100%;
+    z-index: 12;
+    display: none;
+  }
+
+/*Buton 208*/
+div.button-container {
+    display: block;
+    width: 110px;
+    height: 100px;
+    position: fixed;
+    z-index: 9;
+    top:50%;
+    right: 0;
+    font-family: 'PeugeotFontLight', 'Montserrat', sans-serif;
+    -webkit-animation: fadeInSlow 3s ease-in-out; /* Safari 4.0 - 8.0 */
+    animation: fadeInSlow 3s ease-in-out;
+  }
+  
+    #btnCar .button-container {
+      display: block;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      z-index: 9;
+      top:50%;
+      left: 0;
+    }
+    
+    div.shadow-button {
+      background: white;
+      position: absolute;
+      top:-45px;
+      left:0;
+      z-index: 8;
+      opacity: .3;
+      width: 80px; 
+      height: 160px; 
+      -moz-border-radius: 0 100px 100px 0;
+      -webkit-border-radius: 0 100px 100px 0;
+      border-radius: 0 100px 100px 0;
+    }
+    div.shadow-button:hover {
+      width: 90px; 
+    }
+    .button-container p {
+      font-family: 'PeugeotFontLight', 'Montserrat', sans-serif;
+      font-size: 12px;
+      color: white;
+      padding: 5px 0px 3px 15px;
+    }
+    .button-container .parrafo-button {
+      font-family: 'PeugeotFontLight', 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+      padding: 0px 15px 0px 0px;
+    }
+    .button-container p:nth-child(2):hover {
+        margin:0 0 0 -12px;
+    }
+  /*ICONS INFO*/
+  div#iconsInfo {
+    width: 70%;
+    position: absolute;
+    color:white;
+    font-family: 'PeugeotFontLight', 'Montserrat', sans-serif;
+    overflow: hidden;
+    z-index: 1;
+    bottom: 42%;
+    text-align: left;
+    left: 15%;
+  }
+  div#info-uno {
+    display: none;
+    margin: 0 0 0 18%;
+  }
+  div#iconsInfo #info-uno p:nth-child(1){
+    font-size: 2vh;
+    font-weight: 900;
+   }
+  div#iconsInfo #info-uno p:nth-child(2){
+   font-size: 4vh;
+   font-weight: 900;
+  }
+  div#iconsInfo #info-uno p:nth-child(3){
+    font-size: 2vh;
+    font-weight: 900;
+   }
+
+   div#info-dos {
+    display: none;
+    font-size: 10px;
+    overflow: hidden;
+    margin: 0 0 0 17%;
+  }
+  div#iconsInfo .container-items {
+    width: 33.333%;
+    height: auto;
+    float:left;
+    padding: 0;
+   }
+  div#iconsInfo #info-dos img {
+    width: 55px;
+    float: left;
+   }
+   div#iconsInfo #info-dos p {
+    float: left;
+   }
+  div#info-tres301 {
+    display: none;
+    margin: 0 0 0 15%;
+  }
+
+  div#info-tres301 img {
+    float:left;
+    width: 18%;
+    height: auto;
+    margin: 0 10% 0 0;
+    cursor: pointer;
+  }
+  div#info-tres301 img:hover {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);   
+  }
+  #seccion-dos.main-content .mini-cars img#arrow {
+      width: 20px;
+  }
+
+/*Diseno*/
+#seccion-cuatro .disenointerior {
+background: url(../img/bgchico-208.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 700px;
+}
+
+#seccion-cuatro .disenoexterior {
+    background: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+#seccion-cuatro #interior,
+#seccion-cuatro #exterior {
+    cursor: pointer;
+}
+#seccion-cuatro #interior h1 {
+    margin-top: 180%;
+    color:black;
+}
+#seccion-cuatro #exterior h1 {
+    margin-top: 180%;
+    color:white;
+}
+
+#interior-contenido {
+    width: 100%;
+    height: 600px;
+    background: url(../img/bgicockpit-208.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: none;
+}
+#exterior-contenido {
+    width: 100%;
+    height: 600px;
+    background: url(../img/bgchico-208.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+.background-black {
+    background: black;
+}
+#interior-contenido301 {
+    height: 600px;
+    position: relative;
+    text-align: left;
+    display: none;
+}
+#interior-contenido301 .titleEx {
+    margin: 5% 0 0 10%;
+}
+#exterior-contenido301 {
+    width: 100%;
+    height: 800px;
+    display: block;
+    text-align: left;
+}
+.backgroundexterior {
+    background: url(../img/208-bg-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#exterior-contenido301 .titleEx {
+    margin: 5% 0 0 10%;
+}
+#exterior-contenido301 div #carexterior {
+    position: relative;
+    margin: 0 0 0 0;
+}
+.contenido-diseno-interno {
+    width: 100%;
+    height: 800px;
+    background: url(../img/208-interior.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@keyframes fadeespecial{from{opacity:0} to{opacity:1}}
+
+
+#carexterior {
+  position: relative;
+  margin: 10% 0 0 0;
+} 
+
+#interior-contenido h1 {
+  margin: 10% 0;
+  color: black;
+}
+
+#exterior-contenido h1 {
+    margin: 10% 0;
+    color: black;
+  }
+
+#canceldiseno {
+    margin: 2% 0 0 70%;
+    cursor: pointer;
+}
+
+a.close {
+    position: absolute;
+    z-index: 10;
+    top:2%;
+    right: 25%;
+    text-decoration: none;
+    color: black;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/*Switch*/
+.contenido-switch {
+    color:white;
+    font-size: 14px;
+    position: absolute;
+    z-index: 9;
+    top: 10%;
+    left: 70%;
+}
+
+.contenido-switch span:nth-child(1),
+.contenido-switch span:nth-child(3) {
+    margin: 20px;
+    cursor: pointer;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 2px;
+  }
+  
+  .switch input {display:none;}
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 0px;
+    bottom: -5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: gray;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px gainsboro;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(65px);
+    -ms-transform: translateX(65px);
+    transform: translateX(65px);
+    background: url(../img/arrow-izq.png) no-repeat center;
+    background-size: 90%;
+  }
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 4px;
+  }
+  .slider.round:before {
+    border-radius: 50%;
+    color: gray;
+    text-align: center;
+    align-items: center;
+    background: url(../img/arrow-der.png) no-repeat center;
+    background-size: 90%;
+  }
+
+/* CSS para la animación y localización de los DIV de cookies */
+ 
+@keyframes desaparecer
+{
+0%		{bottom: 0px;}
+80%		{bottom: 0px;}
+100%		{bottom: -50px;}
+}
+ 
+@-webkit-keyframes desaparecer /* Safari and Chrome */
+{
+0%		{bottom: 0px;}
+80%		{bottom: 0px;}
+100%		{bottom: -50px;}
+}
+ 
+@keyframes aparecer
+{
+0%		{bottom: -38px;}
+10%		{bottom: 0px;}
+90%		{bottom: 0px;}
+100%		{bottom: -38px;}
+}
+ 
+@-webkit-keyframes aparecer /* Safari and Chrome */
+{
+0%		{bottom: -38px;}
+10%		{bottom: 0px;}
+90%		{bottom: 0px;}
+100%		{bottom: -38px;}
+}
+#cookiesms1:target {
+    display: none;
+}
+.cookiesms {	
+	width:100%;
+	height:80px;
+    font-size: 10px;
+    font-weight: strong;
+    color: white;
+    top:0px;
+    position:fixed;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.6);
+    filter:alpha(opacity=70); /* For IE8 and earlier */
+    transition: bottom 1s;
+    -webkit-transition:bottom 1s; /* Safari */
+    -webkit-box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
+    -moz-box-shadow:    3px -3px 1px rgba(50, 50, 50, 0.56);
+    box-shadow:         3px -3px 1px rgba(50, 50, 50, 0.56);
+    z-index:999999999;
+}
+ .contenido-diseno {
+     text-align: center;
+ }
+  /*Aviso de privacidad*/
+  .privacidadClass {
+      position: fixed;
+      bottom: 2px;
+      color: white;
+      font-size: 12px;
+      cursor: pointer;
+      z-index: 12;
+      bottom:1%;
+      left: 1.5%;
+  }
+  .privacidadClass:hover {
+      border-bottom: 2px solid white;
+  }
+  
+  #divPopup {
+    display: none;
+  }
+  .privacidad-note {
+    position: fixed;
+    bottom: 2%;
+    left: 0%;
+    font-size: 8px;
+    padding: 0 75px;
+    color: white;
+    cursor: pointer;
+  }
+  .popUp {
+    position: fixed;
+    z-index: 12;
+    top:0;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    height: auto;
+    padding: 2%;
+    font-size: 2vh;
+    text-align: justify;
+    background: rgb(235,235,235);
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(196,188,196,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(196,188,196,1);
+    box-shadow: 2px 2px 5px 0px rgba(196,188,196,1);
+    overflow-y: auto;
+  }
+  .content-popup {
+      background: white;
+      padding: 6%;
+      font-size: 12px;
+      color: #000000;
+      display: none;
+  }
+  .content-popup p {
+    color: #000000;
+    padding: 5% 0 0 0;
+}
+  div.close-popup {
+    width: 10%;
+    transform: rotate(270deg);
+    color: rgba(140,138,138, 1);
+    cursor: pointer;
+    left: 24%;
+    top:-7%;
+    position: fixed;
+    display: none;
+  }
+
+  div#divPopup.popUp h2 {
+    background: white;
+
+  }
+  div#divPopup.popUp table th {
+    background:#ebebeb;
+  }
+  div#divPopup.popUp table td {
+    background:white;
+  }
+.error {
+    position: absolute;
+    top: 1%;
+    left:40%;
+    background-color: #f2dede;
+    border:1px solid #ebccd1;
+    padding: 1%;
+    border-radius: 5px;
+}
+div.colorwhite {
+    width: 14px;
+    height: 14px;
+    float:left;
+    margin:5px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid #666666;
+}
+div.colorgris {
+    width: 14px;
+    height: 14px;
+    float:left;
+    margin:5px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: gray;
+    border: 1px solid #666666;
+}
+div.colormoka {
+    width: 14px;
+    height: 14px;
+    float:left;
+    margin:5px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: gray;
+    border: 1px solid #666666;
+}
+div.colornegro {
+    width: 14px;
+    height: 14px;
+    float:left;
+    margin:5px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: black;
+    border: 1px solid #666666;
+}
+/*Motor*/
+.motobackground {
+    background: #000;
+    overflow: hidden;
+    height: 1100px;
+    padding: 10%;
+}
+.motor-gasolina {
+    text-align: center;
+    padding: 0 5% 0 5%;
+}
+.motor-gasolina h2 {
+    color:white;
+    margin: 16.5% 0 5% 0;
+    font-family: 'PeugeotFontLight','Montserrat', sans-serif;
+}
+.motor-gasolina p:nth-child(1) {
+    font-family: 'PeugeotFontLight','Montserrat', sans-serif;
+    color: white;
+    font-size: 20px;
+    margin: 15% 0;
+    text-align: center;
+}
+.motor-gasolina .des-motor {
+    color: white;
+    padding: 1% 0% 0 0%;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: justify;
+    font-family: 'PeugeotFontLight','Montserrat', sans-serif;
+}
+
+.motor-gasolina p:nth-child(2){
+    color: white;
+    padding: 1% 5% 0 5%;
+    font-size: 13px;
+    text-align: center;
+    font-family: 'PeugeotFontLight','Montserrat', sans-serif;
+}
+div.icono-motor img {
+    height: 30px;
+}
+p.h2second {
+    color:white;
+    margin: 40% 0 5% 0;
+    font-size: 18px;  
+    font-family: 'PeugeotFontLight','Montserrat', sans-serif;
+}
+p.subtitlemotor {
+    color:white;
+    margin: 10% 0 10% 0;
+    font-size: 18px;  
+    font-family: 'PeugeotFontLight','Montserrat', sans-serif;
+    text-align: center;
+}
+.motor-diesel {
+    padding: 2% 5% 0 5%;
+    text-align: center;
+}
+.motor-diesel .des-motor {
+    color: white;
+    padding: 1% 0% 0 0%;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: justify;
+    font-family: 'PeugeotFontLight','Montserrat', sans-serif;
+}
+div.icono-motor {
+    float:left;
+    width: 25%;
+    text-align: center;
+    line-height: 2pt;
+}
+div.icono-motor p:nth-child(1) {
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    font-family: 'PeugeotFontLight','Montserrat', sans-serif;
+}
+div.icono-motor p:nth-child(2) {
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    font-family: 'PeugeotFontLight','Montserrat', sans-serif;
+    margin: 15% 0 0 0;
+}
+div.icono-motor p:nth-child(3) {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'PeugeotFont','Montserrat', sans-serif;
+    margin: 15% 0 0 0;
+}
+/*Precios*/
+.precios-content {
+    background:url(../img/208-bg-1.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    padding: 0 15% 0 15%;  
+    text-align: center;
+}
+.preciobar {
+    width: 33.333%;
+    float:left;
+    text-align: center;
+}
+
+.preciobar img {
+    width: 80%;
+}
+.preciobar p {
+    margin: 15% 0 0 0;
+    color:white;
+    line-height: 20px;
+}
+.preciobar p span {
+    font-size: 20px;
+    font-weight: 900;
+}
+p.titlesedan {
+    margin: 10% 0 10% 0;
+    color: #ffffff;
+    font-size: 48px;
+    font-family: 'PeugeotFontLight','Montserrat', sans-serif;
+}
+div.colorbar {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+span.preciospan {
+    color: white;
+    font-size:20px;
+    font-weight: 900;
+}
+.header img:nth-child(2) {
+    display: none;
+}
+img.menu-ico-mobile {
+    display: none;
+}
+.content-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 8;
+  top:0;
+  left: 0;
+  background: #000000;
+  display: none;
+}
+img.ico-close-video {
+ position: absolute;
+ z-index: 22;
+ top:5%;
+ right: 5%;
+ cursor: pointer;
+}
+.galeria-content {
+    background:black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+.grid-contenta {
+    width: 38%;
+    height: 99.6%;
+    float:left;
+    background: black;
+    color: white;
+    padding: 9% 0 0 10%;
+}
+.grid-contentb {
+    width: 60%;
+    height: 100%;
+    float: left;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: -2%;
+}
+.grid-contentb .columna,
+.grid-contentb .columnb,
+.grid-contentb .columnc {
+    height: 100%;
+}
+.grid-contentb .columna p {
+    height: 50%;
+    width: 100%;
+    background: black;
+    border: 1px solid white;
+    position: relative;
+    overflow: hidden;
+}
+.grid-contentb .columna p img {
+    height: auto;
+    width: 100%;   
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+}
+.grid-contentb .columna p img:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.grid-contentb .columnb p {
+    height: 33.333%;
+    width: 100%;
+    background: black;
+    border: 1px solid white;
+    position: relative;
+    overflow: hidden;
+}
+.grid-contentb .columnb p img {
+    height: 100%;
+    width: 100%;   
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+}
+.grid-contentb .columnb p img:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+div.columnc.col-4 {
+    position: relative;
+    overflow: hidden; 
+}
+
+div.columnc.col-4 p img {
+    height: 100%;
+    width: 100%;   
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;  
+}
+div.columnc.col-4 p img:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);  
+}
+.grid-contenta h2, p {
+    color: white;
+}
+.grid-contentb .columnb img:hover {
+    cursor: url(../img/loupe.png), auto;	
+}
+.grid-contentb .columna img:hover {
+    cursor: url(../img/loupe.png), auto;	
+}
+div.columnc.col-4 p:nth-child(1):hover {
+    cursor: url(../img/loupe.png), auto;	
+}
+div.columnc.col-4 p:nth-child(2):hover {
+    cursor: url(../img/loupe.png), auto;	
+}
+h2.titleBig {
+    color:white;
+    font-size:40px;
+}
+p.titlegal {
+    letter-spacing: 1px;
+    font-size: 42px;
+}
+p.descripcion-galeria {
+    margin: 2% 0;
+    text-align: justify;
+    width: 100%;
+    line-height: 20px;
+}
+.content-grid {
+    width: 600px;
+    height: 280px;
+    background: black;
+    margin: 10% 0 0 0;
+}
+.slide-galeria-content {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    z-index: 999999;
+    margin: 5% 0 0 0;
+}
+.ico-close-img {
+    position: fixed;
+    top:20%;
+    right: 15%;
+    z-index: 8;
+    cursor: pointer;
+    width: 3%;
+}
+.ico-left-img {
+    position: absolute;
+    top:60%;
+    left: 16%;
+    z-index: 8;
+    cursor: pointer;  
+}
+.ico-right-img {
+    position: absolute;
+    top:60%;
+    right: 15%;
+    z-index: 8;
+    cursor: pointer;  
+}
+.container-menu301-mobile {
+    display: none;
+}
+
+.arrow-precios-mobiler {
+    display: none;
+}
+.arrow-precios-mobilel {
+    display: none;
+}
+.clearfix { 
+    height: 20px;
+}
+.fichatecnica {
+    margin: 35% 0 0 0;
+    cursor: pointer;
+}
+.fichatecnica:hover {
+    -webkit-box-shadow: -2px 2px 5px -2px rgba(255,255,255,1);
+    -moz-box-shadow: -2px 2px 5px -2px rgba(255,255,255,1);
+    box-shadow: -2px 2px 5px -2px rgba(255,255,255,1);
+}
+img.pruebademanejoboton{
+    clear: both;
+    margin: 10% 45% 0 40%;
+    cursor: pointer;
+}
+img.pruebademanejoboton:hover {
+    -webkit-box-shadow: -2px 2px 5px -2px rgba(255,255,255,1);
+    -moz-box-shadow: -2px 2px 5px -2px rgba(255,255,255,1);
+    box-shadow: -2px 2px 5px -2px rgba(255,255,255,1);
+}
+img.ofertaboton {
+    position: absolute;
+    z-index: 2;
+    bottom: 2%;
+    left: 42%;
+    cursor: pointer;
+}
+img.ofertaboton:hover {
+    -webkit-box-shadow: -2px 2px 5px -2px rgba(255,255,255,1);
+    -moz-box-shadow: -2px 2px 5px -2px rgba(255,255,255,1);
+    box-shadow: -2px 2px 5px -2px rgba(255,255,255,1);
+}
+img.ofertabotoninterior {
+    position: absolute;
+    z-index: 0;
+    bottom: 10%;
+    left: 43%;
+    cursor: pointer;
+}
+img.ofertabotoninterior:hover {
+    -webkit-box-shadow: -2px 2px 5px -2px rgba(255,255,255,1);
+    -moz-box-shadow: -2px 2px 5px -2px rgba(255,255,255,1);
+    box-shadow: -2px 2px 5px -2px rgba(255,255,255,1);
+}
+img.dieselimg {
+    position: absolute;
+    z-index: 8;
+    top: 40%;
+    left: 70%;
+    width: 12%;
+    display: none;
+}
+.dieselmobile {
+    display: none;
+}
+img#dieselComplemento {
+    position: fixed;
+    top:60%;
+    left:70%;
+    z-index: 0;
+    width: 8%;
+}
+img#detailinteriorunomobile{
+    display: none;
+}
+img#detailinteriortresmobile{
+    display: none;
+}
+img#detailinteriordosmobile{
+    display: none;
+}
+img#detailinteriorcuatromobile{
+    display: none;
+}
+img#detailinteriorcincomobile{
+    display: none;
+}
+img#detailimgunomobile{
+    display: none;
+}
+img#detailimgdosmobile{
+    display: none;
+}
+img#detailimgtresmobile{
+    display: none;
+}
+img#detailimgcincomobile{
+    display: none;
+}
+img#detailimgseismobile{
+    display: none;
+}
+.slide-galeria-contentmobile {
+    display: none;
+}
+/*Sustituye JS*/
+#titlediseno {
+    opacity: 0;
+}
+  /*Responsive*/
+  @media only screen  and (max-width: 667px) {
+    img#detailinteriorcuatro {
+        display: none;
+    }
+    img#detailinteriorcuatromobile {
+        display: block;
+    }
+    img#detailinteriorcincomobile{
+        display: block;
+    }
+    #wrapper a#link-4 {
+        width: 50px;
+        height: 50px;
+        left: 10%;
+        top: 78%;
+    }
+    #wrapper a#link-5 {
+        width: 50px;
+        height: 50px;
+        left: 40%;
+        top: 10%;
+    }
+    img#dieselComplemento  {
+        display: none;
+    }
+    #slideGaleria {
+        display: none;
+    }
+    .slide-galeria-contentmobile {
+        display: none;
+        width: 400px;
+        height: 401px;
+        position: relative;
+        z-index: 25;
+        top:0%;
+        left:0%;
+    }
+    .slide-galeria-contentmobile img:nth-child(1) {
+        width: 100%;
+        height: auto;
+        margin: 25% 0;
+    }
+    .slide-galeria-contentmobile img:nth-child(2) {
+        width: 5%;
+        height: auto;
+        margin: 5% 0 0 0;
+    }
+    .slide-galeria-contentmobile img:nth-child(3) {
+        width: 8%;
+        height: auto;
+        margin: 20% 0 0 0
+    }
+    .slide-galeria-contentmobile img:nth-child(4) {
+        width: 8%;
+        height: auto;
+        margin: 20% 0 0 0
+    }
+    .contenido-diseno-interno {
+        background-size: cover;
+        background-attachment: scroll;
+    }
+    .ico-close-img {
+        position: absolute;
+        top: 10%;
+    }
+    img#detailimgdos{
+        display: none;
+    }
+    img#detailimgseis{
+        display: none;
+    }
+    img#detailinteriorunomobile{
+        display: block;
+    }
+    img#detailinteriortresmobile{
+        display: block;
+    }
+    img#detailinteriordosmobile{
+        display: block;
+    }
+    img#detailimgseismobile {
+        display: block;
+    }
+    img#detailinterioruno {
+        display: none;
+    }
+    img#detailinteriortres {
+        display: none;
+    }
+    img#detailinteriordos {
+        display: none;
+    }
+    img#detailimgunomobile{
+        display: block;
+    }
+    img#detailimgdosmobile{
+        display: block;
+    }
+    img#detailimgtresmobile{
+        display: block;
+    }
+    img#detailimgcincomobile{
+        display: block;
+    }
+    img#detailinteriorcinco{
+    display:none;
+    }
+    img.dieselmobile {
+        display: block;
+        position: absolute;
+        bottom:27%;
+        right:0%;
+        width: 25%;
+    }
+    .dieselimg {
+        display: none;
+    }
+    #carpreciouno.preciobar img {
+        width: 70%;
+        margin: -5% 0 0 0;
+    }
+    img.pruebademanejoboton {
+        margin: 10% 15% 0 25%;
+      }
+      img.ofertaboton {
+        bottom: 14%;
+        left: 29%;
+    }
+    img.ofertabotoninterior {
+        bottom: 1%;
+        left: 28%;
+    
+    }
+    .grid-contentb {
+        display: block;
+    }
+    .galeria-content {
+        height: auto;
+    }
+    p.titlegal {
+        letter-spacing: 1px;
+        font-size: 32px;
+    }
+    .grid-contentb .columnb p {
+        height: 50%;
+    }
+    div.columnc.col-4 p:nth-child(1),
+    div.columnc.col-4 p:nth-child(2) {
+        height: 50%;
+    }
+    .container-notfound p:nth-child(1) {
+        padding: 50% 0;
+    }
+    div.close-popup {
+        top:0%;
+        left: 90%;
+        z-index: 12;
+    }
+    .arrow-precios-mobilel {
+        position: absolute;
+        z-index: 8;
+        top:55%;
+        left: 5%;
+        display: block;
+    }
+    .arrow-precios-mobiler {
+        position: absolute;
+        z-index: 8;
+        top:55%;
+        right: 5%;
+        display: block;
+    }
+    #seccion-dos.main-content { 
+        background:url(../img/208-bg-2-mobile.jpg);
+    }
+    #seccion-cuatro .disenointerior { 
+        background:url(../img/208-bg-interior-mobile.jpg);
+    }
+    #exterior-contenido301 {
+        background:url(../img/208-bg-2-mobile.jpg);
+        background-size: 100%;
+        height: 700px;
+    }
+    #seccion-cuatro301.main-content {
+        background: black;
+        height: 700px;
+    }
+    .promo-content208 {
+        padding: 3% 10%;
+    }
+    .promo-content301 {
+        padding: 3% 10%;
+    }
+    .container-menu301-mobile {
+        width: 100%;
+        height: 120%;
+        background: #000000;
+        color:white;
+        position: fixed;
+        z-index: 999;
+    }
+  .container-menu301-mobile {
+    font-family: 'PeugeotFontLight', 'Montserrat', sans-serif;
+  }
+  .container-menu301-mobile ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 20%;
+  }
+  .container-menu301-mobile ul li {
+    padding: 10px 0px;
+    text-align: left;
+  }
+  .container-menu301-mobile ul li p {
+    border: .5px solid white;
+    width: 60px; 
+    margin-left: 0%;
+    text-align: left;
+  }
+  .container-menu301-mobile ul li a {
+    font-size: 18px;
+    color:white;
+    text-decoration: none;
+    text-align: left;
+  }
+  .container-menu301-mobile ul li a.active {
+    padding-left: 0px;
+    font-size: 13px;
+    text-align: right;
+  }
+  .container-menu301-mobile ul li a:hover {
+   padding-right: 40px;
+  }
+    .header {
+        width: 100%;
+    }
+    .header img:nth-child(1) {
+        width: 20%;
+        display: block;
+        position: absolute;
+        top: 5%;
+        left: 2%;
+        z-index: 32;
+    }
+    .header img:nth-child(2) {
+        width: 8%;
+        display: block;
+        position: fixed;
+        top: 3%;
+        right: 5%;
+        z-index: 18;
+    }
+    img#closemenu {
+        width: 8%;
+        display: block;
+        position: fixed;
+        top: 3%;
+        right: 5%;
+        z-index: 18;
+    }
+    .grid-contentb { 
+        width: 100%;
+        padding: 0 2% 0 2%;
+        margin: 20% 0;
+    }
+    .grid-contenta {
+        width: 100%;
+        height: 60%;
+        padding: 25% 5% 5% 5%;
+    }
+    .motobackground {
+        background:url(../img/bg-motor-mobile.jpg);
+        height: 1600px;
+        padding: 0;
+    }
+    .preciobar {
+        width: 100%;
+        float: left;
+        text-align: center;
+        margin: 50% 0 0 0;
+    }
+    .preciobar img {
+        width: 80%;
+    }
+    p.titlesedan {
+        font-size:25px;
+    }
+    div.leyenda {
+        width: 35%;
+        bottom: 16%;
+    }
+    .no-lopagas {
+        bottom: 21%;
+        right: 3px;
+    }
+    .no-lopagas img {
+        width: 80%;
+    }
+    .slidea {
+        height: 50%;
+    }  
+    .slideb {
+        height: 50%;
+    }  
+    .privacidadClass {
+        font-size: 10px;
+        bottom: 2%;
+        cursor: pointer;
+        left: 1%;
+    }
+    .popUp {
+        width:100%;
+        padding: 6%;
+    }
+    input[name=enviar] { 
+        width: 100%;
+        margin: -5% 0;
+    }
+    .cookiesms {	
+        width:100%;
+        height:120px;
+    }
+    #seccion-uno301.main-content .title-mini {
+        width: 66%;
+        margin: 45% 0 0 -16%;
+    }
+    #seccion-uno301.main-content .title-initial {
+        width: 65%;
+        margin: 35% 0 0 -8%;
+    }
+    div#optionsIcons.container-buttons-options {
+        bottom:29%;
+    }
+    div.leyenda {
+        width: 29%;
+        bottom: 21%;
+    }
+    #menu301 {
+        display: none;
+    }
+    .header img {
+        width: 50%;
+        margin: 10px;
+        
+    }
+    div.button-container {
+        display: none;
+    }
+    #seccion-uno301.main-content .car-home {
+        width: 100%;
+        position: absolute;
+        top: 25%;
+        left: 0%;
+    }
+    div#logo-footer {
+        left: 30%;
+    }
+    div#logo-footer {
+        left: 30%;
+    }
+    div#iconsInfo {
+        width: 80%;
+        bottom: 37%;
+    }
+    div#iconsInfo #info-dos img {
+        width: 40px;
+    }
+    div#iconsInfo .container-items span {
+        font-size: 7px;
+    }
+    div#info-tres301 {
+        bottom: 22%;
+        left: 5%;
+    }
+    div#info-tres301 img {
+        display: none;
+    }
+    div#info-tres301.icons-content p.car-uno {
+        width: 36px;
+        height: 36px;
+        float:left;
+        margin:5px 5px 10px 5px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: white;
+        border: 1px solid white;
+     }
+     div#info-tres301.icons-content p.car-dos {
+        width: 36px;
+        height: 36px;
+        float:left;
+        margin:5px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: rgb(69, 69, 69);
+        border: 1px solid white;
+     }
+     div#info-tres301.icons-content p.car-tres {
+        width: 36px;
+        height: 36px;
+        float:left;
+        margin:5px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background:gray;
+        border: 1px solid white;
+     }
+     div#info-tres301.icons-content p.car-cuatro {
+        width: 36px;
+        height: 36px;
+        float:left;
+        margin:5px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: black ;
+        border: 1px solid white;
+     }
+     /*formulario*/
+     #footer-container {
+         height: 500px;
+     }
+     #btn-link {
+        text-align: center;
+        margin: 0% 0;
+    }
+    .error {
+        position: absolute;
+        left: 0%;
+        top: 82%;
+        width: 100%;
+    }
+     div.content-form.sideleft {
+         margin: 0;
+         padding: 10px;
+     }
+     div.content-form {
+        padding: 0 10px;
+     }
+     div.content-form.sideright {
+       margin: 0%;
+       padding: 0 10px;
+     }
+     p.campoladoc {
+        margin: 0px;
+     }
+     #btn-form {
+        margin: 15px 0;
+     }
+     .btn-pruebamanejo {
+        padding: 10px;
+     }
+     #exterior-contenido301 .titleEx {
+        margin: 25% 0 10% 4%;
+        width: 50%;
+    }
+    #exterior-contenido301 div #carexterior {
+        width: 100%;
+        margin: 30% 0 0 0;
+    } 
+    #wrapper-exterior a#tool-3 {
+        width: 50px;
+        height: 50px;
+        left: 70%;
+        top:62%;
+    }
+    #wrapper-exterior a#tool-4 {
+        width: 50px;
+        height: 50px;
+        left: 30%;
+        top:62%;
+        border: 0;
+    }
+    #wrapper-exterior a#tool-5 {
+        width: 50px;
+        height: 50px;
+        left: 39%;
+        top:52%;
+        border: 0;
+    }
+    div.icono-motor p:nth-child(2) {
+        font-size: 9px;
+    }
+    div.icono-motor p:nth-child(3) {
+        font-size: 12px;
+    }
+    #wrapper-exterior a#tool-2 {
+        width: 50px;
+        height: 50px;
+        left:55%;
+        top:62%;
+    }
+    p.titlesedan {
+        font-size:28px;
+        margin: 30% 0 0 0;
+    }
+    .precios-content {
+        background:url(../img/208-bgprecios-mobile.jpg);
+        background-size: cover;
+        padding: 0 5% 0 5%;
+        height: 900;
+        position: relative;
+    }
+    #wrapper-exterior a#tool-1 {
+        width: 50px;
+        height: 50px;
+        left: 18%;
+        top:60%;
+    }
+    #wrapper-exterior a#tool-6 {
+        width: 50px;
+        height: 50px;
+        left: 58%;
+        top:50%;
+    }
+    #carousel-exterior img {
+        top: 0%;
+        height: auto;
+    }
+    #wrapper-exterior a.close {
+        top: 2%;
+        left: 90%; 
+    }
+    .contenido-switch {
+        left: 11%;
+        top: 25%;
+        font-size: 14px;
+    }
+    #interior-contenido301 .titleEx {
+        margin: 20% 0 15% 10%;
+        width: 50%;
+        display: none;
+    }
+    #wrapper a#link-1 {
+        width: 50px;
+        height: 50px;
+        left: 70%;
+        top: 20%;
+        border: 0;
+    }
+    #wrapper a#link-2 {
+        width: 50px;
+        height: 50px;
+        left: 8%;
+        top: 35%;
+        border: 0;
+    }
+    #wrapper a#link-3 {
+        width: 50px;
+        height: 50px;
+        left: 75%;
+        top: 33%;
+        border: 0;
+    }
+    #carousel img {
+        top:0%;
+    }
+    #wrapper a.close {
+        top: 5%;
+    }
+    #seccion-uno301.main-content {
+        background: url(../img/208-bg-1-mobile.jpg);
+        background-size: cover;
+        height: 700px;
+    }
+    /*home*/
+    div#header-container.header{
+       display: none;
+    }
+    .content-modal h2 {
+        color:black;
+        position: absolute;
+        top:18%;
+        left: 5%;
+        z-index: 12;
+        font-size: 34px;
+    }
+    .content-modal p {
+        color: black;
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        right: 2%;
+        z-index: 12;
+        font-size: 18px;
+        text-align: justify;
+    }
+    .content-modali h2 {
+        top:18%;
+        left: 5%;
+        font-size: 34px;
+    }
+    .content-modali p {
+        top:30%;
+        left: 5%;
+        font-size: 17px;
+    }
+    .background-thanks {
+        background-image: url(../img/bg-gracias301-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 100%;
+      }
+      .background-notfound {
+        background-image: url(../img/bg-404-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 100%;
+      }
+      .container-thanks {
+          width: 80%;
+          left: 10%;
+      }
+      .content-grid {
+        width: 350px;
+        height: auto;
+        margin-top: -20%;
+      }
+      div#info-uno {
+        margin: 0 0 0 17%;
+    }
+    div#info-dos {
+        padding: 0 2% 0 0;
+        margin: 2% 0 0 0;
+    }
+    .motor-diesel p {
+        padding: 2% 5%;
+    }
+    .motor-diesel .des-motor {
+        padding: 0 5%;
+    }
+}
+
+/* Styles for Desktops mayor 15" */
+@media screen and (min-width: 1300px) and (max-width: 1600px) {
+    div#optionsIcons.container-buttons-options {
+        bottom:38%;
+      }
+      div.leyenda {
+        bottom:35%;
+      }
+      .no-lopagas {
+        bottom:36%;
+      }
+      div#iconsInfo {
+        bottom:39%; 
+      }
+      .ico-close-img {
+        top: 23%;
+        right: 15%;
+        width: 2%;
+    }
+    .slide-galeria-content {
+        margin: -5% 0 0 0;
+    }
+  }
+  /* Styles for Desktops mayor 15" */
+@media screen and (min-width: 1600px) and (max-width: 2000px) {
+    .ico-close-img {
+        top: 3%;
+    }
+    .motobackground {
+        height: 1300px;
+    }
+    #exterior-contenido301 .titleEx {
+        margin: 10% 0 0 10%;
+    }
+    #wrapper-exterior a#tool-5 {
+        top:40%;
+    }
+    #wrapper-exterior a#tool-2 {
+        top:69%;
+        left:53%;
+    }
+    #wrapper-exterior a#tool-3 {
+        top:64%;
+        left: 60%;
+    }
+    #wrapper-exterior a#tool-4 {
+        left:40%;
+        top:60%;
+    }
+    #wrapper-exterior a#tool-1 {
+        left: 32%;
+        top:59%;
+    }
+    .content-modal h2 {
+        top: 70%
+    }
+    .content-modal p {
+        top: 75%;
+    }
+    #carousel div {
+        height: 700px;
+    }
+    div#optionsIcons.container-buttons-options {
+        bottom: 18%
+    }
+    div.leyenda {
+        bottom:12%;
+        width: 10%;
+    }
+    .no-lopagas {
+        bottom: 10%;
+    }
+    div#iconsInfo {
+        bottom: 18%;
+    }
+    #logo-footer {
+        left: 46%;
+    }
+    #header-container {
+        left: 45%;
+    }
+    #carousel-exterior img {
+        top:1%;
+    }
+    .precios-content {
+        height: 900px;
+    }
+    .contenido-switch {
+        left:42%;
+    }
+    #carousel img {
+        top:12%;
+    }
+}
+  /* Styles para pantalla TV */
+  @media screen and (min-width: 2561px) and (max-width: 3000px) { 
+    #logo-footer {
+        left: 47.2%;
+    }
+    #header-container {
+        left: 46%;
+    }
+    #seccion-uno301.main-content {
+        height: 1500px;
+    }
+    .ico-close-img {
+        top: 3%;
+    }
+    .motobackground {
+        height: 1500px;
+    }
+    #exterior-contenido301 .titleEx {
+        margin: 10% 0 0 10%;
+    }
+    #wrapper-exterior a#tool-5 {
+        top:40%;
+    }
+    #wrapper-exterior a#tool-2 {
+        top:69%;
+        left:53%;
+    }
+    #wrapper-exterior a#tool-3 {
+        top:64%;
+        left: 60%;
+    }
+    #wrapper-exterior a#tool-4 {
+        left:40%;
+        top:60%;
+    }
+    #wrapper-exterior a#tool-1 {
+        left: 32%;
+        top:59%;
+    }
+    .content-modal h2 {
+        top: 70%
+    }
+    .content-modal p {
+        top: 75%;
+    }
+    #carousel div {
+        height: 700px;
+    }
+    div#optionsIcons.container-buttons-options {
+        bottom: 25%
+    }
+    div.leyenda {
+        bottom:21%;
+        width: 10%;
+    }
+    .no-lopagas {
+        bottom: 21%;
+    }
+    div#iconsInfo {
+        bottom: 25%;
+    }
+    #seccion-cuatro301.main-content {
+        height: 1200px;
+    }
+    .precios-content {
+        height: 800px;
+    }
+    .galeria-content {
+        height: 800px;
+    }
+  }
+
+/*iPad Landscape*/
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1034px) 
+and (orientation : landscape) {
+    #menu301 ul li p {
+        margin-right: 0;
+        border: 1px solid white;
+    }
+    .precios-content {
+        padding: 0 15% 0 10%;
+    }
+    .grid-contenta {
+        width: 100%;
+        padding: 10% 20%;
+    }
+    .grid-contentb {
+        width: 100%;
+        padding: -15% 20%;
+        margin-top:-25%;
+    }
+}
+
+/*iPad Portrait*/
+  @media only screen and (min-width : 768px) and (max-width : 1023px)  {
+    img.dieselimg {
+        display: none;
+    }
+    .popUp {
+        width: 50%;
+    }
+    #header-container{
+        left: 39%;
+    }
+    div.close-popup {
+        top: 2px;
+        z-index: 12;
+    }
+    #menu301 ul li p {
+        margin-right: 0;
+        border: 1px solid white;
+    }
+    div#optionsIcons.container-buttons-options {
+        bottom: 20%;
+    }
+    div.leyenda {
+        bottom: 10%; 
+        width: 25%; 
+    }
+    .no-lopagas {
+        bottom: 10%;  
+    }
+    #seccion-uno301.main-content .car-home {
+        width: 70%;
+        top: 40%;
+        left: 13%;
+    }
+    #seccion-uno301.main-content .title-initial {
+        margin: 20% 0 0 0;
+    }
+    #seccion-uno301.main-content .title-mini {
+        margin: 28% 0 0 0;
+        width:50%;
+    }
+    div#iconsInfo {
+        bottom: 30%;
+    }
+    #logo-footer {
+        left: 42%;
+    }
+    #exterior-contenido301 div #carexterior {
+        width: 80%;
+    }
+    #exterior-contenido301 .titleEx {
+        margin:15% 0 0 10%;
+    }
+    .contenido-switch {
+        left: 35%;
+        top: 80%;
+    }
+    #wrapper-exterior a#tool-1 {
+        width: 50px;
+        height: 50px;
+        top:60%;
+        left: 20%;
+    }
+    #wrapper-exterior a#tool-4 {
+        width: 50px;
+        height: 50px;
+        top:63%;
+    }
+    #wrapper-exterior a#tool-2 {
+        width: 50px;
+        height: 50px;
+        top:65%;
+    }
+    #wrapper-exterior a#tool-3 {
+        width: 50px;
+        height: 50px;
+        top:50%;
+        left:74%;
+    }
+    #wrapper-exterior a#tool-5 {
+        width: 50px;
+        height: 50px;
+        top:47%;
+    }
+    #wrapper-exterior a#tool-6 {
+        width: 50px;
+        height: 50px;
+        top:40%;
+    }
+    #wrapper a#link-5,
+    #wrapper a#link-4 {
+        width: 50px;
+        height: 50px;
+    }
+    #interior-contenido301 .titleEx {
+        margin: 5% 0 0 17%;
+        width: 30%;
+    }
+    #carousel-exterior img {
+        top:39%;
+    }
+    #wrapper-exterior a.close {
+        top:50%;
+    }
+    #wrapper a#link-1,
+    #wrapper a#link-2,
+    #wrapper a#link-3   {
+        width: 50px;
+        height: 50px;
+    }
+    #carousel img {
+        top:46%;
+    }
+    #wrapper a.close {
+        top: 60%;
+    }
+    .container-menu301 {
+        width: 150px;
+    }
+    .motobackground {
+        height: 900px;
+        padding: 15% 10%;
+    }
+    .precios-content {
+        padding: 0 12% 0 15%;  
+    }
+    .grid-contenta {
+        width: 100%;
+        padding: 15% 20%;
+    }
+    .grid-contentb {
+        width: 100%;
+        padding: 0;
+        margin-top:-140%;
+    }
+    .sideleft {
+        width: 50% !important;
+    }
+    .sideright {
+        width: 50% !important;
+    }
+    .content-grid {
+        width: 550px;
+        padding: 0 0 0 10%;
+    }
+    .grid-contentb .columna p { 
+        width: 100%;
+    }
+    .grid-contentb .columna, .grid-contentb .columnb, .grid-contentb .columnc{
+        height: auto;
+    }
+    .galeria-content {
+        height: 1200px;
+    }
+    .preciobar {
+        width: 100%;
+        float: left;
+        text-align: center;
+        margin: 10% 0 0 0;
+    }
+    .preciobar img {
+        width: 50%;
+    }
+    .arrow-precios-mobilel {
+        display: block;
+        position: absolute;
+        left: 20%;
+    }
+    .arrow-precios-mobiler {
+        display: block;
+        position: absolute;
+        right: 20%;
+    }
+    .titlesedan {
+        opacity: 1;
+    }
+    div.icono-motor p:nth-child(2) {
+        font-size: 10px;
+    }
+    div.icono-motor p:nth-child(3) {
+        font-size: 10px;
+    }
+    img#dieselComplemento {
+        top: 70%;
+        left: 80%;    
+    }
+    img.pruebademanejoboton {
+        clear: both;
+        margin: 10% 40% 0 28%;
+        cursor: pointer;
+    }
+}
+/*landscape phone*/
+@media only screen 
+and (min-width : 668px) 
+and (max-width : 768px) { 
+    #logo-footer {
+        left: 40%;
+    }
+    #exterior-contenido301 div #carexterior {
+        width: 60%;
+        margin: 17% 0 0 0;
+    }
+    .contenido-switch {
+        left: 28%;
+        top: 25%;
+    }
+    #wrapper-exterior a#tool-5 {
+        width: 40px;
+        height: 40px;
+    }
+    #wrapper-exterior a#tool-4 {
+        width: 40px;
+        height: 40px;
+    }
+    #wrapper-exterior a#tool-3 {
+        width: 40px;
+        height: 40px;
+        left: 62%;
+        top: 42%;
+    }
+    #wrapper-exterior a#tool-2 {
+        width: 40px;
+        height: 40px;
+        left: 56%;
+        top: 40%;
+    }
+    #wrapper-exterior a#tool-1 {
+        width: 40px;
+        height: 40px;
+        left: 32%;
+        top: 43%;
+    }
+    div.content-form.sideleft {
+        width: 50%;
+    }
+    div.content-form.sideright {
+        width: 50%;
+    }
+    #footer-container {
+        height: 300px;
+        overflow: scroll;
+    }
+    #seccion-uno301.main-content {
+        background-size:cover;
+    }
+    #exterior-contenido301 .titleEx {
+        margin: 5% 0 0 20%;
+        width: 30%;
+    }
+    #interior-contenido301 .titleEx {
+        margin: 5% 0 0 20%;
+        width: 30%;
+    }
+    img.pruebademanejoboton {
+        clear: both;
+        margin: 10% 0% 0 0%;
+        cursor: pointer;
+    }
+    .galeria-content {
+        height: 1500px;
+    }
+    .grid-contentb {
+        width: 70%;
+        padding: 0 25%;
+        margin: -50% 0;
+        display: block;
+    }
+    .grid-contenta {
+        width: 70%;
+        height: 60%;
+        margin-left: 10%;
+    }
+    .content-grid {
+        width: 350px;
+        height: 350px;
+        background: black;
+    }
+    .arrow-precios-mobilel {
+        position: absolute;
+        z-index: 8;
+        left: 25%;
+        display: block;
+    }
+    .arrow-precios-mobiler {
+        position: absolute;
+        z-index: 8;
+        right: 25%;
+        display: block;
+    }
+    .preciobar {
+        width: 25%;
+        left: 35%;
+    }
+    .preciobar img {
+        margin: 0% 0 0 -50%;
+    }
+    p.titlesedan {
+        font-size: 5vw;
+    }
+    .motobackground {
+        height: 1800px;
+    }
+    .motor-gasolina p:nth-child(1) {
+        margin: 25% 0;
+    }
+    #exterior-contenido301,
+    #seccion-cuatro301.main-content {
+        height: 500px;
+    }
+    img.ofertaboton {
+        left: 40%;
+        cursor: pointer;
+    }
+    #seccion-uno301.main-content {
+        height: 560px;
+    }
+    #wrapper a#link-2,
+    #wrapper a#link-1,
+    #wrapper a#link-3, 
+    #wrapper a#link-4,
+    #wrapper a#link-5{
+        width: 50px;
+        height: 50px;
+    }
+    div#optionsIcons.container-buttons-options {
+        bottom: 30%;
+    }
+    .no-lopagas {
+        bottom: 23%;
+    }
+    div.leyenda { 
+        bottom: 23%;
+    }
+    #btn-form {
+        text-align: center;
+        margin: -6% 0;
+    }
+}
+
+/*landscape iphone5*/
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 330px) {  
+    div#logo-footer {
+        left: 28%;
+    }
+    div.leyenda {
+        width: 29%;
+        bottom: 23%;
+    }
+    .no-lopagas img {
+        width: 60%;
+    }
+    div#optionsIcons.container-buttons-options {
+        bottom: 30%;
+    }
+    div#iconsInfo {
+        bottom: 38%;
+        width: 90%;
+        left: 5%;
+    }
+    .contenido-switch {
+        font-size: 14px;
+    }
+    #exterior-contenido301 div #carexterior {
+        margin: 48% 0 0 0;
+    }
+    #wrapper-exterior a#tool-2 {
+        top: 55%;
+    }
+    .content-modal p {
+        top: 20%;
+    }
+    .content-modal h2 {
+        top: 10%;
+        width: 100%;
+        font-size: 30px;
+        text-align: left;
+    }
+    #exterior-contenido301 .titleEx {
+        margin: 25% 0 10% 4%; 
+    }
+    #wrapper a#link-1 {
+        top: 48%;
+    }
+    #wrapper a#link-2 {
+        left: 10%;
+        top: 45%; 
+    }
+    #wrapper a#link-3 {
+        left: 65%;
+        top: 45%; 
+    }
+    #wrapper a#link-4 {
+        width: 50px;
+        height: 50px;
+        left: 40%;
+        top: 10%;
+    }
+    #wrapper a#link-5 {
+        width: 50px;
+        height: 50px;
+        left: 10%;
+        top: 78%;
+    }
+    .grid-contentb {
+        padding: 0%;
+    }
+    #exterior-contenido301 {
+        height: 600px;
+    }
+    img.ofertaboton {
+        bottom: 20%;
+        left: 25%;
+    }
+}
+
+/*iphone 8 plus*/
+@media only screen 
+and (min-width : 390px) 
+and (max-width : 424px) and (max-height: 736px) {   
+    #exterior-contenido301 div #carexterior {
+        width: 100%;
+        margin: 30% 0 0 0;
+    } 
+    .preciobar {
+        margin: 40% 0 0 0;
+    }
+    div.leyenda {
+        width: 29%;
+        bottom: 11%;
+    }
+    .no-lopagas {
+        bottom: 11%;
+    }
+    div#optionsIcons.container-buttons-options {
+        bottom: 21%;
+        left: 1%;
+    }
+    .contenido-switch {
+        left: 16%;
+    }
+    img.dieselmobile {
+        bottom:19%;
+    }
+    .content-grid {
+        width: 390px;
+        padding: 0 0 0 1%;
+    }
+}
+/*iMAc*/
+@media screen and (min-width: 2000px) and (max-width: 2560px) {
+    #carousel div {
+        height: 1500px;
+    }
+    .precios-content {
+        height: 1200px;
+    }
+    #logo-footer {
+        left: 47.2%;
+    }
+    #header-container {
+        left: 46%;
+    }
+    #seccion-uno301.main-content {
+        height: 1500px;
+    }
+    .ico-close-img {
+        top: 3%;
+    }
+    .motobackground {
+        height: 1600px;
+    }
+    #exterior-contenido301 .titleEx {
+        margin: 10% 0 0 10%;
+    }
+    #wrapper-exterior a#tool-5 {
+        top:40%;
+    }
+    #wrapper-exterior a#tool-2 {
+        top:69%;
+        left:53%;
+    }
+    #wrapper-exterior a#tool-3 {
+        top:64%;
+        left: 60%;
+    }
+    #wrapper-exterior a#tool-4 {
+        left:40%;
+        top:60%;
+    }
+    #wrapper-exterior a#tool-1 {
+        left: 32%;
+        top:59%;
+    }
+    .content-modal h2 {
+        top: 70%
+    }
+    .content-modal p {
+        top: 75%;
+    }
+    div#optionsIcons.container-buttons-options {
+        bottom: 25%
+    }
+    div.leyenda {
+        bottom:21%;
+        width: 10%;
+    }
+    .no-lopagas {
+        bottom: 21%;
+    }
+    div#iconsInfo {
+        bottom: 25%;
+    }
+    #seccion-cuatro301.main-content {
+        height: 1200px;
+    }
+    .galeria-content {
+        height: 800px;
+    }
+    #wrapper-exterior {
+        left: 0%;
+        top: 15%;
+    }
+        /*Switch*/
+    .contenido-switch {
+        top: 15%;
+        left: 45%;
+    }
+    #wrapper-exterior a#tool-1{
+        left: 36%;
+    }
+    img.ofertaboton {
+        left: 46%;
+    }
+    img.ofertabotoninterior {
+        left: 46%;
+        bottom: 22%;
+    }
+    .motor-diesel .des-motor {
+        font-size: 18px;
+    }
+    .motor-gasolina .des-motor {
+        font-size: 18px;
+    }
+    p.h2second {
+        font-size: 22px;
+    }
+    p.subtitlemotor{
+        font-size: 22px;
+    }
+    #seccion-uno301.main-content .title-mini {
+        left: 45%;
+    }
+    .motor-diesel p:nth-child(1),
+    .motor-gasolina p:nth-child(1) {
+        font-size:28px;
+    }
+    .slide-galeria-content {
+        margin: -21% 0 0 0;
+    }
+    .ico-close-img {
+        top: 45%;
+        width: 1%;
+    }
+    .ico-left-img {
+        top: 80%
+    }
+    .ico-right-img {
+        top: 80%
+    }
+    .content-modal {
+        background: black;
+    }
+    #wrapper-exterior a.close {
+        top: 45%;
+    }
+    #wrapper {
+        height: 1500px;
+        top:-10%;
+    }
+    #interior-contenido301 {
+        height: 1500px;
+     }
+     #exterior-contenido301 {
+        height: 1500px;
+    }
+}

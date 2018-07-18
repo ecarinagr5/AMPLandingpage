@@ -1,0 +1,15 @@
+{
+	"currentCar": "blanco",
+	"blanco": {
+	  "imageUrl": "content/img/301blancog.png"
+	},
+	"gris": {
+	  "imageUrl": "content/img/301grismokag.png"
+	},
+	"grisartense": {
+		"imageUrl": "content/img/301grisartenseg.png"
+	},
+	"negro": {
+		"imageUrl": "content/img/301negroperlag.png"
+	  }
+  }

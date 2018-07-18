@@ -1,0 +1,115 @@
+.w3-animate-top{position:relative;animation:animatetop 0.8s;animation-delay: 1s; opacity: 0; animation-fill-mode: forwards;}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.w3-animate-right{position:relative;animation:animateright 0.4s;animation-delay: 1s; opacity: 0; animation-fill-mode: forwards;}@keyframes animateright{from{opacity:0} to{opacity:1}}
+.w3-animate-left{position:relative;animation:animateleft 0.4s;animation-delay: 1s; opacity: 0; animation-fill-mode: forwards;}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.w3-animate-leftcar{position:relative;animation:animateleft 0.8s;animation-delay: 0s; opacity: 0; animation-fill-mode: forwards;}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.w3-animate-zoom {animation:animatezoom 1.5s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.w3-animate-left-car {position:relative;animation:animateleft 1s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.w3-animate-bottom{position:relative;animation:animatebottom 0.8s ;animation-delay: 1s; opacity: 0; animation-fill-mode: forwards;}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.w3-animate-fadingslide{-webkit-animation: fading 5s linear forwards; animation:fading 5s linear forwards; }@keyframes fading{0%,100%{opacity:0}50%,60%,70%,80%{opacity:1}100%{opacity:1}0%{opacity:0}} @-webkit-keyframes fading{0%{opacity:0}100%{opacity:1} 0%{opacity:0} }
+.w3-animate-fadingtext{-webkit-animation: fad 4s; opacity: 0; animation-fill-mode: forwards; animation:fad 4s forwards; }@keyframes fad{0%{opacity:0}100%{opacity:1}} @-webkit-keyframes fad{0%{opacity:0}100%{opacity:1}}
+.w3-animate-fadingprivacidad{-webkit-animation: fadpriv 4s; opacity: 0; animation-fill-mode: forwards; animation:fadpriv 4s forwards; }@keyframes fadpriv{0%{opacity:0}100%{opacity:1}} @-webkit-keyframes fad{0%{opacity:0}100%{opacity:1}}
+.w3-animate-bottomslide{position:relative;animation:animatebottom 0.8s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.w3-animate-right301{position:relative;animation:animateright 1s; animation-delay: 0s; opacity: 0; animation-fill-mode: forwards;}@keyframes animateright{from{right:-300px;opacity:0} to{right:20%;opacity:1}}
+.w3-animate-rightprecio{position:relative;animation:animaterightprecio 1s; opacity: 0; animation-fill-mode: forwards;}@keyframes animaterightprecio{from{right:-300px;opacity:0} to{right:0%;opacity:1}}
+.w3-animate-leftprivacidad{animation:animateleftprivacidad 0.8s; opacity: 0; animation-fill-mode: forwards;}@keyframes animateleftprivacidad{from{width:0;opacity:0} to{width:30%;opacity:1}}
+.w3-animate-leftprivacidadmobile{animation:animateleftprivacidadmobile 0.8s; opacity: 0; animation-fill-mode: forwards;}@keyframes animateleftprivacidadmobile{from{width:0;opacity:0} to{width:100%;opacity:1}}
+.w3-animate-hideprivacidad{animation:hideleftprivacidad 0.8s; opacity: 0; animation-fill-mode: forwards;}@keyframes hideleftprivacidad{from{width:30%;opacity:0} to{width:0%;opacity:1}}
+.w3-animate-background{animation:back 0.8s; animation-fill-mode: forwards;}@keyframes hideleftprivacidad{from{background: black;} to{background: transparent}}
+.w3-animate-right208{position:relative;animation:animateright208 1s; animation-delay: 1s; opacity: 0; animation-fill-mode: forwards;}@keyframes animateright208{from{right:-300px;opacity:0} to{right:0%;opacity:1}}
+.hatch {
+	animation-name: hatch;
+	-webkit-animation-name: hatch;	
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;
+	transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	-webkit-transform-origin: 50% 100%; 
+	visibility: visible !important;		
+}
+
+@keyframes hatch {
+	0% {
+		transform: rotate(0deg) scaleY(0.6);
+	}
+	20% {
+		transform: rotate(-2deg) scaleY(1.05);
+	}
+	35% {
+		transform: rotate(2deg) scaleY(1);
+	}
+	50% {
+		transform: rotate(-2deg);
+	}	
+	65% {
+		transform: rotate(1deg);
+	}	
+	80% {
+		transform: rotate(-1deg);
+	}		
+	100% {
+		transform: rotate(0deg);
+	}									
+}
+
+@-webkit-keyframes hatch {
+	0% {
+		-webkit-transform: rotate(0deg) scaleY(0.6);
+	}
+	20% {
+		-webkit-transform: rotate(-2deg) scaleY(1.05);
+	}
+	35% {
+		-webkit-transform: rotate(2deg) scaleY(1);
+	}
+	50% {
+		-webkit-transform: rotate(-2deg);
+	}	
+	65% {
+		-webkit-transform: rotate(1deg);
+	}	
+	80% {
+		-webkit-transform: rotate(-1deg);
+	}		
+	100% {
+		-webkit-transform: rotate(0deg);
+	}		
+}
+
+
+.floating{
+	animation-name: floating;
+	-webkit-animation-name: floating;
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0%);	
+	}
+	50% {
+		transform: translateY(8%);	
+	}	
+	100% {
+		transform: translateY(0%);
+	}			
+}
+
+@-webkit-keyframes floating {
+	0% {
+		-webkit-transform: translateY(0%);	
+	}
+	50% {
+		-webkit-transform: translateY(8%);	
+	}	
+	100% {
+		-webkit-transform: translateY(0%);
+	}			
+}
